@@ -2,10 +2,12 @@
 
 
 @theme{
-  --shadow-lg: #FF7C6F 0px 2px 8px 0px;
+  --shadow-lg: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --color-red-500:#ff7c6f;
   --color-red-400:#FF8B60;
-  --shadow-md: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ /* : rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+  --color-blue-100:#8ed1fc;
+   --shadow-md: #8ed1fc 0px 3px 8px;
 }
 body{
   background-image: linear-gradient(341deg,#FF7C6F,#8ed1fc);

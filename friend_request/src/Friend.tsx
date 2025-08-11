@@ -12,14 +12,14 @@ const Friend = ({ friend }) => {
         />
         <h2 className='font-semibold text-sm'>{friend.name}</h2>
         {friend.mutalConnections > 0 && (
-          <p className='text-[13px]'>
+          <p className='text-[14px] text-gray-500'>
             {friend.mutalConnections > 1
               ? `${friend.mutalConnections} mutual connections`
               : `${friend.mutalConnections} mutual connection`}
           </p>
         )}
       </div>
-      <button onClick={() => setFollowing(!following)} className='cursor-pointer py-[7px] text-sm px-4 border-2 shadow-md border-transparent'>
+      <button onClick={() => setFollowing(!following)} className='cursor-pointer py-[7px] text-sm px-4 border-2 shadow-md border-transparent rounded-md hover:bg-blue-100'>
         {following ? 'Following' : 'Confirm'}
       </button>
     </div> 
