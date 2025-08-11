@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+@theme{
+  --shadow-lg: #FF7C6F 0px 2px 8px 0px;
+  --color-red-500:#ff7c6f;
+  --color-red-400:#FF8B60;
+  --shadow-md: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+body{
+  background-image: linear-gradient(341deg,#FF7C6F,#8ed1fc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.friendRequest::before{
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 100%;
+  background-color: var(--color-red-500);
+  bottom: -450px;
+ left: -250px;
+  transform: rotate(45deg);
+  border-radius:100%;
+
+}
+.friendRequest > div{
+  position: relative;
+  z-index: 2;
+}
